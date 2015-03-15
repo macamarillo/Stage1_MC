@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style_stage_1.css">
+  <title>Melissa's Intro to Programming Notes</title>
+</head>
+
+<body>
+
+ <!-- Stage 0: Getting Started with HTML -->
+ <!-- The code below represents Melissa's work for this nanodegree. -->
+ <!-- h1 and div tags below will be used to distinguish notes for each course lesson -->
+
+<div class="border">
+  	<div class="lesson">
+  		<h1 class="lesson_title">Lesson #1: The Basics of the Web and HTML</h1>
+    		<h2 class="subtitle"><span>Overview of the Web</span></h2>
+
+    		The Web is composed of multiple HTML (<em>Hypertext Markup Language</em>) pages. The major pieces of the Web are you, your computer and browser, HTTP (protocol that browsers use to connect to servers), the internet (which uses HTTP to communicate with you), your browser, and servers.
+   
+    		<br>
+
+    		<h2 class="subtitle"><span>HTML</span></h2>
+ 
+    		HTML, or HyperText Markup Language, is the heart of the Web and is made up of <b>text/content</b> (what you see), <b>markup tags</b> (what it looks like), <b>references to other documents</b> (e.g., images and <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444">videos</a>, and <b>links to other pages</b>, such as <a href="http://www.google.com">Google.com</a>.
+    		<br>
+    
+    		HTML documents have many components, but what was focused on in this lesson was primarily the body/contents of an HTML document. In the lesson, I was introduced to a number of tags and learned the difference between inline and block elements. Block elements form an invisible box around text that you can then, for example, assign a height and width to. I thought this was pretty cool.
+    		<br>
+
+    		<h2 class="subtitle"><span>What Computers Know</span></h2>
+       
+   			 Computers are often called <em>stupid</em>. What this means is that a computer needs <b>very specific</b> instructions from a programmer in order to know how to perform. The computer only knows how to do exactly what you tell it to do.
+    		<br>
+
+    		<h2 class="subtitle"><span>Good news--programmers can't remember everything and aren't expected to!</span></h2>
+     
+    		This was the most encouraging part of the lesson, i.e., programmers can't remember everything. It was good to know that there are good resources available to help you remember commond HTML syntax.
+    		<br>
+  	</div>
+
+  	<div class="lesson">   
+    	<h1 class="lesson_title">Lesson #2: Creating a Structured Document with HTML Subtitles</h1>
+    		<h2 class="subtitle"><span>Focus of Course</span></h2>
+
+    		This course focused on showing a methodical way of breaking down a current web page and recreating it for your own purposes.
+     		<br>
+
+    		<h2 class="subtitle"><span>The Way Websites Work</span></h2>
+
+    		A website can be thought of like your house.
+    		<br>
+    			<ul>
+      				<li><b>HTML (HyperText Markup Language) files</b> are like the structure, where the walls are placed and is the standard markup language used to create web pages.</li>
+      				<li><b>CSS (Cascading Style Sheets) files</b> are then the style of your house. Style sheet language is used for describing the look and format of a dcoument written in markup language.</li>
+      				<li><b>JavaScript files</b> are the interactive components of your house.</li>
+    			</ul>
+
+    		<br>
+      
+    		<h2 class="subtitle"><span>Web Page Structure</span></h2>
+
+    		HTML is the language of the Web and it has specific syntax and rules. The basic word in the HTML language is a tab. Browsers turn HTML tags into element that form a tree-like structure. 
+    		<br>
+
+    		<h2 class="subtitle"><span>Boxes</span></h2>
+    
+    		Everything on the Web is a box. So, when you receive an assignment to turn a page of content to a Web page, you must "draw" a visual box around every element you see. Boxes on a page can be different sizes and in different locations. They can also be marked so that style can be applied to them later. The best way to do that is to give each element a class atrribute.
+   			<br>
+   			<br>
+    		<h2 class="subtitle"><span>Class attributes</span></h2>
+     		<ul>
+     			<li>Can be thought of as labels on boxes, i.e., something that reminds you of what's inside the box.</li>
+     			<li>Boxes can have several labels or attributes applied to them. The same applies to HTML tags; they can belong to multiple classes.</li>
+     			<li>It's a good idea to have class names that make sense so that you understand the purpose of the "box."</li>
+     		</ul>
+  	</div>
+
+	<div class="lesson">   
+    	<h1 class="lesson_title">Lesson #3: Adding CSS Style to HTML Structure Subtitles</h1>
+    		<h2 class="subtitle"><span>Focus of Course</span></h2>
+
+    		This course focused on CSS, code written to control the "style" of HTML elements, and on how to avoid repetition by using CSS. Avoiding repetition helps programmers avoid rewriting the same code in multiple places, which can lead to errors. It also helps a programmer achieve consistency in style.
+
+     		<br>
+
+    		<h2 class="subtitle"><span>Inheritance</span></h2>
+
+    		Inheritance is key in CSS. It relies on the "document tree" referred to earlier. Descendant elements can inherit CSS property values from any ancestor element that encloses them. Inheritable properties include color, font, letter-spacing, line-height, list-style, text-align, text-indent, text-transform, visibility, white-space and word-spacing. Non-inheritable properties include background, border, display, float and clear, height and width, margin, min-mx
+      
+    		<h2 class="subtitle"><span>CSS Selectors</span></h2>
+
+    		Selectors are what allows you to target specific HTML elements and apply style to them. A <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">good reference for CSS selectors</a> was provided.
+    		<br>
+
+    		<h2 class="subtitle"><span>How to Include CSS Styling on Your Web Page</span></h2>
+    
+    		<ul>
+     			<li>Method 1: Write CSS in the "head" tag of your HTML.</li>
+     			<li>Method 2: Link your HTML to a separate CSS file.</li>
+     			<li>Method 3: Write your style <em>inline</em> with your HTML.</li>
+     		</ul>
+
+   			<h2 class="subtitle"><span>Element Sizes</span></h2>
+  
+     		The size of your actual element is equal to the sumy of the border, padding, and content width. The sample code shown below makes the calculation of the element size include both the border and padding so that it's easier to make layouts.
+     		<br>
+    		<br>
+     		*{
+     		<br>
+				box-sizing: border-box;
+			<h2 class="subtitle"><span>Code, Test, Refine</span></h2>
+  
+    		<ol>
+     			<li>Look for natural boxes, visually boxify.</li>
+     			<li>Look for repeated styles and semantic elements, work on tags.</li>
+     			<li>Write your HTML.</li>
+     			<li>Fix things, think about how and where to position on screen.</li>
+     		</ol>
+
+
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* This is a CSS comment.*/
+
+
+/*
+Comments are only to help PEOPLE read a code file. The
+computer ignores them.
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: left;
+} 
+
+.border {
+  background-color: #BF5700;
+  padding: 10px;
+}
+.lesson {
+  background-color: #F2A900;
+  margin: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #005F86;
+}
+.lesson_title {
+  color: #005F86;
+
+}
+
+.subtitle {
+    color: white;
+
+}
